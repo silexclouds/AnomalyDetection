@@ -1,4 +1,4 @@
-# OBJECTIVE: prediction of potential anomalies in crops
+## OBJECTIVE: prediction of potential anomalies in crops
 
 Procedure: 
 1.	Training: 
@@ -11,13 +11,13 @@ Procedure:
       - b.	Prediction of status based on trained model
 
 ### Datasource: Copernicus Sentinel-2 satellite images
-### Vegetation Indices: SR, NDVI, GNDVI, NDRE, modNDRE, EVI, EVI2, PVR, GCI, RECI, TVI, MTCI, LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI,OSAVI.
+#### Vegetation Indices: SR, NDVI, GNDVI, NDRE, modNDRE, EVI, EVI2, PVR, GCI, RECI, TVI, MTCI, LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI,OSAVI.
 
 Required applications:
- - o	Anaconda: Distribution of Python and R programming languages for scientific computing, suitable for Windows, Linux, and macOS, that aims to simplify package management and deployment. (www.anaconda.com)
- - o	Python Notebook
- - o	Orange Data Mining: Open source machine learning and data visualization application. License GPLv3. (www.orangedatamining.com)
- - o	Google Earth Engine account
++ Anaconda: Distribution of Python and R programming languages for scientific computing, suitable for Windows, Linux, and macOS, that aims to simplify package management and deployment (www.anaconda.com)
++ Python Notebook (https://jupyter.org/)
++ Orange Data Mining: Open source machine learning and data visualization application. License GPLv3 (www.orangedatamining.com)
++ Google Earth Engine account (https://earthengine.google.com/)
 
 ----
 
@@ -39,13 +39,13 @@ Procedure:
 Python Notebook required modules: geemap, ee, numpy, eemont, csv, os, io, requests, pandas, osgeo
 | Module | Description |
 | ------ | ------ |
-| geemap | [is a Python package for interactive mapping with Google Earth Engine (www.geemap.org) To use geemap, is required a Google Earth Engine account (https://earthengine.google.com/)][PlDb] |
-| ee | Google Earth Engine Python API package [PlGh] |
-| eemont | This package extends Google Earth Engine with pre-processing and processing tools for the most used satellite platforms. [https://eemont.readthedocs.io/en/0.1.7/][PlDb] |
-| pandas | open source Python package most widely used for data science/data analysis and machine learning tasks [(https://pandas.pydata.org/][PlGh] |
+| geemap | [is a Python package for interactive mapping with Google Earth Engine (www.geemap.org) To use geemap, is required a Google Earth Engine account (https://earthengine.google.com/) |
+| ee | Google Earth Engine Python API package |
+| eemont | This package extends Google Earth Engine with pre-processing and processing tools for the most used satellite platforms. (https://eemont.readthedocs.io/en/0.1.7/) |
+| pandas | open source Python package most widely used for data science/data analysis and machine learning tasks (https://pandas.pydata.org/) |
 
 
-Anaconda Environment: 
+#### Anaconda Environment: 
 1)	Install Anaconda:
 Install anaconda or miniconda: The geemap package has some optional dependencies, such as GeoPandas and localtileserver. 
 2)	Create a new Environment
@@ -53,7 +53,8 @@ It is highly recommended to create a new conda environment to install geemap. Fo
 
 conda create -n [environment name]
 To create an environment in which you can work and install the following packages you can use the file .condarc , and putting it into the user folder (naming it “.condarc”), and in the Anaconda prompt the following line “conda config”. 
-example of .condarc file:
+
+Example of .condarc file:
 
     channels:
       - conda-forge
@@ -94,7 +95,7 @@ Note: In case `ee_extra`, `eemont`, and `geemap` packages have not been installe
       conda install eemont -c conda-forge
       conda install geedim –c conda-forge
 
-geemap is also available on PyPI. To install geemap, run the "pip install geemap" and "pip install eemont" in the terminal.
+geemap is also available on PyPI. To install geemap, run "pip install geemap" and "pip install eemont" in the terminal.
                 
 Note: In case the command “earthengine authenticate” doesn’t work because the command ‘gcloud’ is not recognized, install the google-cloud-sdk package, close all Command Prompts and re-open the environment to proceed with the authentication. 
 •	Linux: conda install -c conda-forge google-cloud-sdk
