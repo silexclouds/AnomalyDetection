@@ -2,13 +2,13 @@ OBJECTIVE: prediction of potential anomalies in crops
 
 Procedure: 
 1.	Training: 
-    a.	Extraction of Vegetation Indices on fields with a validated anomaly
-    b.	Extraction of Vegetation Indices on fields with not-detected anomalies
-    c.	Ingestion of datasets for training
-    d.	Training and selection of model
+   - a.	Extraction of Vegetation Indices on fields with a validated anomaly
+   - b.	Extraction of Vegetation Indices on fields with not-detected anomalies
+   - c.	Ingestion of datasets for training
+   - d.	Training and selection of model
 2.	Prediction:
-    a.	Extraction of Vegetation Indices on fields to detect status
-    b.	Prediction of status based on trained model
+   - a.	Extraction of Vegetation Indices on fields to detect status
+   - b.	Prediction of status based on trained model
 
 Datasource: Copernicus Sentinel-2 satellite images
 Vegetation Indices: SR, NDVI, GNDVI, NDRE, modNDRE, EVI, EVI2, PVR, GCI, RECI, TVI, MTCI, LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI,OSAVI.
