@@ -22,8 +22,8 @@ Required applications:
 Use cases:
 Case 1: Analysis of fields with potential PSA occurences (based on trained datasets)
 Procedure:
-    - a.	Extract field information (video)
-    - b.	Launch Prediction Workflow (video)
+  - a.	Extract field information (video)
+  - b.	Launch Prediction Workflow (video)
 
 Case 2: Analysis of other potential anomalies. Required new trained datasets
 Procedure: 
