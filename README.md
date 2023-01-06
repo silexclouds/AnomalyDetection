@@ -100,3 +100,18 @@ geemap is also available on PyPI. To install geemap, run "pip install geemap" an
 Note: In case the command “earthengine authenticate” doesn’t work because the command ‘gcloud’ is not recognized, install the google-cloud-sdk package, close all Command Prompts and re-open the environment to proceed with the authentication. 
 •	Linux: conda install -c conda-forge google-cloud-sdk
 •	Windows: follow instructions described on: https://cloud.google.com/sdk/docs/install
+
+---
+
+Data Preparation Workflow
+http://fpcup.silexclouds.com/demos/DataPreparation_workflow.png
+
+### Procedure:
++ Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
+C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows
++ Step 2: reload the files selected in 1
+### Workflow description:
++- 1. Upload of datasets (.csv format) generated with VI Python Notebook (fields_anomaly_true.csv & fields_anomaly_false.csv files)
++- 2. Select particular rows (fields) if necessary
++- 3. Concatenation of True/False datasets into a single File
++- 4. Save final dataset for training “fields_for_training.csv” (required input for the Training Workflow)
