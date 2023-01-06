@@ -111,7 +111,8 @@ http://fpcup.silexclouds.com/demos/DataPreparation_workflow.png
 C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows
 + Step 2: reload the files selected in 1
 ### Workflow description:
-+- 1. Upload of datasets (.csv format) generated with VI Python Notebook (fields_anomaly_true.csv & fields_anomaly_false.csv files)
-+- 2. Select particular rows (fields) if necessary
-+- 3. Concatenation of True/False datasets into a single File
-+- 4. Save final dataset for training “fields_for_training.csv” (required input for the Training Workflow)
++ 1. Upload of datasets (.csv format) generated with VI Python Notebook (fields_anomaly_true.csv & fields_anomaly_false.csv files)
++ 2. Select particular rows (fields) if necessary
++ 3. Concatenation of True/False datasets into a single File
++ 4. Save final dataset for training “fields_for_training.csv” (required input for the Training Workflow)
+
