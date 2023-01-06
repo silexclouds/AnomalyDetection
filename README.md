@@ -105,7 +105,9 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 
 ## Data Preparation Workflow
 
-![](http://github.com/silexclouds/CropAnomaly/blob/main/images/DataPreparation_workflow.jpg)
+![](http://github.com/silexclouds/CropAnomaly/blob/main/images/DataPreparation_workflow.png)
+
+![](https://pandao.github.io/editor.md/examples/images/8.jpg)
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
