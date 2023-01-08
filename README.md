@@ -1,16 +1,21 @@
 ## OBJECTIVE: prediction of potential anomalies in crops
 
-Procedure: 
-1.	Training: 
-      - a.	Extraction of Vegetation Indices on fields with a validated anomaly
-      - b.	Extraction of Vegetation Indices on fields with not-detected anomalies
-      - c.	Ingestion of datasets for training
-      - d.	Training and selection of model
-2.	Prediction:
-      - a.	Extraction of Vegetation Indices on fields to detect status
-      - b.	Prediction of status based on trained model
+**Procedure to follow:**
 
-**Note: Is important to consider as a critical input validated data regarding the anomaly for the fields of reference.**
+**1.	Training:**
+- a.	Extraction of Vegetation Indices on fields with a validated anomaly
+- b.	Extraction of Vegetation Indices on fields with not-detected anomalies
+- c.	Ingestion of datasets for training
+- d.	Training and selection of model
+
+**2.	Prediction:**
+
+- a.	Extraction of Vegetation Indices on fields to detect status
+- b.	Prediction of status based on trained model
+
+
+***Note:** For the training procedure is important to underline as **critical** the ingestion of validated datasets regarding the occurrence of an anomaly.*
+
 ---
 #### Use case 1: Analysis of fields with potential PSA occurences (based on trained datasets)
 + a.	Extract field information (*VI_extraction.ipynb*)
