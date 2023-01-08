@@ -112,7 +112,7 @@ Open source machine learning and data visualization.
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
 
-*C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows*
+    *C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows*
 + Step 2: reload the files selected in **1**
 ### Workflow description:
 + 1 - Upload of datasets (*.csv format*) generated with VI Python Notebook (**fields_anomaly_true.csv** & **fields_anomaly_false.csv files**)
@@ -131,7 +131,7 @@ Open source machine learning and data visualization.
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
 
-*C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\B_Workflow_training.ows*
+    *C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\B_Workflow_training.ows*
      
 + Step 2: reload the file selected in **1** (fields_for_training.csv)
 + Step 3: check the model with the best metrics from **7** (Test and Score)
