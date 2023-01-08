@@ -102,6 +102,8 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 •	Windows: follow instructions described on: https://cloud.google.com/sdk/docs/install
 
 ---
+Description of Orange workflows used to manipulate, train and 
+Open source machine learning and data visualization.
 
 ## Data Preparation Workflow
 
@@ -189,8 +191,7 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow0.png)
   
 - 2 - Remove Nan values from new dataset (cloud pixel)
-- 3 - Load of the selected trained model
-   example: RandomForest_Model.pkcls
+- 3 - Load of the selected trained model (example: RandomForest_Model.pkcls)
 - 4 - Prediction process
 
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow1.png)
