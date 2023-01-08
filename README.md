@@ -111,8 +111,9 @@ Open source machine learning and data visualization.
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
-C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows
-+ Step 2: reload the files selected in 1
+
+          *C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows*
++ Step 2: reload the files selected in **1**
 ### Workflow description:
 + 1 - Upload of datasets (*.csv format*) generated with VI Python Notebook (**fields_anomaly_true.csv** & **fields_anomaly_false.csv files**)
 + 2 - Select particular rows (fields) if necessary
@@ -120,7 +121,7 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 + 4 - Save final dataset for training **fields_for_training.csv** (*required input for the Training Workflow*)
 
 ---
-
+---
 ## Training Workflow
 
 ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow.png)
@@ -128,11 +129,11 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
 
-     C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\B_Workflow_training.ows
+     *C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\B_Workflow_training.ows*
      
-+ Step 2: reload the file selected in 1 (**fields_for_training.csv**)
-+ Step 3: check the model with the best metrics from 7 (**Test and Score**)
-+ Step 4: check the model with the best metrics from 11 (**Predictions**)
++ Step 2: reload the file selected in **1** (fields_for_training.csv)
++ Step 3: check the model with the best metrics from **7** (Test and Score)
++ Step 4: check the model with the best metrics from **11** (Predictions)
 ### Workflow description:
 - 1 - Upload of the file with the information extracted from Sentinel-2 vegetation indices (fields_for_training.csv).
      *File format: Comma Separated Values (.csv)*
@@ -162,7 +163,7 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
         
 + 8 - Models trained are saved to local folder
 + 9 - Visualization of data for testing
-+ 10 - Load of models saved on step 8
++ 10 - Load of models saved on **step 8**
 + 11 - Predictions based on saved trained models with a subset selected for testing
 
      ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow3.png)
@@ -171,8 +172,7 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
 
 ---
-
-
+---
 ## Prediction Workflow
 
 ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow.png)
@@ -182,11 +182,11 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
     *C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\C_Workflow_prediction.ows*
     
-+ Step 2: reload the file selected in 1
-+ Step 3: check the selected model in 3 (default Random Forest)
-+ Step 4: check the predictions save in 5
++ Step 2: reload the file selected in **1**
++ Step 3: check the selected model in **3** (*default Random Forest*)
++ Step 4: check the predictions save in **5**
 ### Workflow description:
-- 1 - Upload of new polygon/s dataset/s in .csv format
+- 1 - Upload of new polygon/s dataset/s (*in .csv format*)
 
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow0.png)
   
@@ -196,7 +196,7 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow1.png)
    
-- 5 - Save prediction in .csv format
+- 5 - Save prediction (*in .csv format*)
 
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow2.png)
    
