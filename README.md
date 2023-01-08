@@ -111,6 +111,7 @@ Open source machine learning and data visualization.
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
+
 *C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows*
 + Step 2: reload the files selected in **1**
 ### Workflow description:
@@ -119,8 +120,10 @@ Open source machine learning and data visualization.
 + 3 - Concatenation of True/False datasets into a single File
 + 4 - Save final dataset for training **fields_for_training.csv** (*required input for the Training Workflow*)
 
+
 ---
----
+
+
 ## Training Workflow
 
 ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow.png)
@@ -171,7 +174,8 @@ Open source machine learning and data visualization.
 
 
 ---
----
+
+
 ## Prediction Workflow
 
 ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow.png)
