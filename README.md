@@ -86,7 +86,7 @@ Google Earth Engine (GEE) packages in python (Anaconda environment)
 - https://eemont.readthedocs.io/en/latest/
 - https://anaconda.org/conda-forge/google-cloud-sdk
 
-Note: In case `ee_extra`, `eemont`, and `geemap` packages have not been installed in the initial Anaconda environment using the .condarc file, they can be installed later from the command line:
+Note: In case **ee_extra**, **eemont**, and **geemap** packages have not been installed in the initial Anaconda environment using the **.condarc** file, they can be installed later from the command line:
 
       Anaconda prompt -> 
       conda activate [environment name]
@@ -106,8 +106,6 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 ## Data Preparation Workflow
 
 ![](http://github.com/silexclouds/CropAnomaly/blob/main/images/DataPreparation_workflow.png)
-
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
