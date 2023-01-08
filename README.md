@@ -125,34 +125,46 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
+
      C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\B_Workflow_training.ows
+     
 + Step 2: reload the file selected in 1 (fields_for_training.csv)
 + Step 3: check the model with the best metrics from 7 (Test and Score)
 + Step 4: check the model with the best metrics from 11 (Predictions)
 ### Workflow description:
 + 1. Upload of the file with the information extracted from Sentinel-2 vegetation indices (fields_for_training.csv).
      File format: Comma Separated Values (.csv)
+     
      ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow0.png)
+     
 + 2. Selection of Columns & Rows of interest
 + 3. Data visualization
 + 4. Data Sampler (for instance a selection of 75% of cases for training and 25% for testing)
+
      ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow1.png)
+     
 + 5. Visualization of data for training
 + 6. Definition of model parameters
 + 7. Testing & Scoring evaluation of selected models 
+
      ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow2.png)
+     
      - o Area under ROC is the area under the receiver-operating curve.
      - o Classification accuracy is the proportion of correctly classified examples.
      - o F-1 is a weighted harmonic mean of precision and recall
      - o Precision is the proportion of true positives among instances classified as positive, e.g. the proportion of anomalies correctly identified as anomalies.
      - o Recall is the proportion of true positives among all positive instances in the data, e.g. the number of anomalies among all classified as anomalies.
      - o Specificity is the proportion of true negatives among all negative instances, e.g. the number of non-anomalies among all classified as non-anomalies.
+     
         More info regarding the test & score widget at: https://orangedatamining.com/widget-catalog/evaluate/testandscore/
+        
 + 8. Models trained are saved to local folder
 + 9. Visualization of data for testing
 + 10.Load of models saved on step 8
 + 11.Predictions based on saved trained models with a subset selected for testing
+
      ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow3.png)
+     
 + 12. Selection of the model to be applied for the anomaly detection. In the example for the demo data provided, the selected is Random Forest model.
 
 ---
@@ -163,18 +175,26 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
+
     C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\C_Workflow_prediction.ows
+    
 + Step 2: reload the file selected in 1
 + Step 3: check the selected model in 3 (default Random Forest)
 + Step 4: check the predictions save in 5
 ### Workflow description:
 + 1. Upload of new polygon/s dataset/s in .csv format
+
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow0.png)
+   
 + 2. Remove Nan values from new dataset (cloud pixel)
 + 3. Load of the selected trained model
    example: RandomForest_Model.pkcls
 + 4. Prediction process
+
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow1.png)
+   
 + 5. Save prediction in .csv format
+
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow2.png)
+   
 
