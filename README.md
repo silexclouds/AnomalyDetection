@@ -161,9 +161,9 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
      - Area under ROC is the area under the receiver-operating curve.
      - Classification accuracy is the proportion of correctly classified examples.
      - F-1 is a weighted harmonic mean of precision and recall
-     - Precision is the proportion of true positives among instances classified as positive, e.g. the proportion of anomalies correctly identified as anomalies.
-     - Recall is the proportion of true positives among all positive instances in the data, e.g. the number of anomalies among all classified as anomalies.
-     - Specificity is the proportion of true negatives among all negative instances, e.g. the number of non-anomalies among all classified as non-anomalies.
+     - Precision is the proportion of true positives among instances classified as positive, e.g. the proportion of anomaly cases correctly identified as anomalies.
+     - Recall is the proportion of true positives among all positive instances in the data, e.g. the number of anomaly cases among all identified as anomalies.
+     - Specificity is the proportion of true negatives among all negative instances, e.g. the number of non-anomaly cases among all identified as non-anomalies.
      
        *More info regarding the **Test & Score** widget at: https://orangedatamining.com/widget-catalog/evaluate/testandscore/*
         
