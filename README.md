@@ -12,14 +12,14 @@ Procedure:
 
 ---
 #### Use case 1: Analysis of fields with potential PSA occurences (based on trained datasets)
-+ a.	Extract field information (video)
-+ b.	Launch Prediction Workflow (video)
++ a.	Extract field information
++ b.	Launch Prediction Workflow
 
 #### Use case 2: Analysis of other potential anomalies. Required new trained datasets
-+ a.	Extract historical field information related to the crop anomaly and healthy fields (video)
-+ b.	Launch Training Workflow (video)
-+ c.	Extract Field information for new prediction (video)
-+ d.	Launch Prediction Workflow (video)
++ a.	Extract historical field information related to the crop anomaly and healthy fields
++ b.	Launch Training Workflow
++ c.	Extract Field information for new prediction
++ d.	Launch Prediction Workflow
 
 ----
 
