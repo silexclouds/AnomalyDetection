@@ -29,8 +29,17 @@
 + e.	Launch Prediction Workflow (*C_Workflow_prediction.ows*)
 
 ----
+<!-- blank line -->
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/orange_logo_hq.png">
+    <source src="path/to/video.mp4" type="video/mp4">
+  </video>
+</figure>
+<!-- blank line -->
 
-### Datasource: Copernicus Sentinel-2 satellite images
+----
+### Datasource: 
+**Copernicus Sentinel-2 satellite images
 ### Vegetation Indices: 
 **SR, NDVI, GNDVI, NDRE, modNDRE, EVI, EVI2, PVR, GCI, RECI, TVI, MTCI, LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI,OSAVI.**
 
