@@ -114,10 +114,10 @@ Open source machine learning and data visualization.
 C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Workflow_dataPreparation.ows
 + Step 2: reload the files selected in 1
 ### Workflow description:
-+ 1 - Upload of datasets (.csv format) generated with VI Python Notebook (fields_anomaly_true.csv & fields_anomaly_false.csv files)
++ 1 - Upload of datasets (*.csv format*) generated with VI Python Notebook (**fields_anomaly_true.csv** & **fields_anomaly_false.csv files**)
 + 2 - Select particular rows (fields) if necessary
 + 3 - Concatenation of True/False datasets into a single File
-+ 4 - Save final dataset for training “fields_for_training.csv” (required input for the Training Workflow)
++ 4 - Save final dataset for training **fields_for_training.csv** (*required input for the Training Workflow*)
 
 ---
 
@@ -130,12 +130,12 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
      C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\B_Workflow_training.ows
      
-+ Step 2: reload the file selected in 1 (fields_for_training.csv)
-+ Step 3: check the model with the best metrics from 7 (Test and Score)
-+ Step 4: check the model with the best metrics from 11 (Predictions)
++ Step 2: reload the file selected in 1 (**fields_for_training.csv**)
++ Step 3: check the model with the best metrics from 7 (**Test and Score**)
++ Step 4: check the model with the best metrics from 11 (**Predictions**)
 ### Workflow description:
 - 1 - Upload of the file with the information extracted from Sentinel-2 vegetation indices (fields_for_training.csv).
-     File format: Comma Separated Values (.csv)
+     *File format: Comma Separated Values (.csv)*
      
      ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow0.png)
      
@@ -158,7 +158,7 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
      - Recall is the proportion of true positives among all positive instances in the data, e.g. the number of anomalies among all classified as anomalies.
      - Specificity is the proportion of true negatives among all negative instances, e.g. the number of non-anomalies among all classified as non-anomalies.
      
-       More info regarding the 'Test & Score' widget at: https://orangedatamining.com/widget-catalog/evaluate/testandscore/
+       *More info regarding the **Test & Score** widget at: https://orangedatamining.com/widget-catalog/evaluate/testandscore/*
         
 + 8 - Models trained are saved to local folder
 + 9 - Visualization of data for testing
@@ -167,7 +167,7 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
      ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow3.png)
      
-+ 12 - Selection of the model to be applied for the anomaly detection. In the example for the demo data provided, the selected is Random Forest model.
++ 12 - Selection of the model to be applied for the anomaly detection *(in the example for the demo data provided, the selected is Random Forest model)*.
 
 
 ---
@@ -190,8 +190,8 @@ C:\Program Files\Orange3>orange-canvas C:\AnomalyDetection\Orange_Workflows\A_Wo
 
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow0.png)
   
-- 2 - Remove Nan values from new dataset (cloud pixel)
-- 3 - Load of the selected trained model (example: RandomForest_Model.pkcls)
+- 2 - Remove Nan values from new dataset (*cloud pixel*)
+- 3 - Load of the selected trained model (*example: **RandomForest_Model.pkcls***)
 - 4 - Prediction process
 
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow1.png)
