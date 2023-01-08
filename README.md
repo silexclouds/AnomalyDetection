@@ -12,14 +12,15 @@ Procedure:
 
 ---
 #### Use case 1: Analysis of fields with potential PSA occurences (based on trained datasets)
-+ a.	Extract field information
-+ b.	Launch Prediction Workflow
++ a.	Extract field information (VI_extraction.ipynb)
++ b.	Launch Prediction Workflow (C_Workflow_prediction.ows)
 
 #### Use case 2: Analysis of other potential anomalies. Required new trained datasets
-+ a.	Extract historical field information related to the crop anomaly and healthy fields
-+ b.	Launch Training Workflow
-+ c.	Extract Field information for new prediction
-+ d.	Launch Prediction Workflow
++ a.	Extract historical field information related to the crop anomaly and healthy fields (VI_extraction.ipynb)
++ b.  Launch Data Preparation Workflow (A_Workflow_dataPreparation.ows)
++ c.	Launch Training Workflow (B_Workflow_training.ows)
++ d.	Extract Field information for new prediction (VI_extraction.ipynb)
++ e.	Launch Prediction Workflow (C_Workflow_prediction.ows)
 
 ----
 
