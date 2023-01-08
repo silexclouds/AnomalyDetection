@@ -104,7 +104,7 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 
 ## Description of Orange workflows used for data manipulation, training and prediction. 
 
-![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/orange_logo_hq.png)
+![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/orange_logo_hq.png "Orange Data Mining")[https://orangedatamining.com/]
 
 ---
 
