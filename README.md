@@ -104,14 +104,14 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 
 ## Description of Orange workflows used for data manipulation, training and prediction. 
 
-![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/orange_logo_hq.png)
+![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/orange_logo_hq.png)
 
 ---
 
 
 ## Data Preparation Workflow
 
-![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/DataPreparation_workflow.png)
+![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/DataPreparation_workflow.png)
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
@@ -130,7 +130,7 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 
 ## Training Workflow
 
-![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow.png)
+![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Training_workflow.png)
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
@@ -144,19 +144,19 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 - 1 - Upload of the file with the information extracted from Sentinel-2 vegetation indices (fields_for_training.csv).
      *File format: Comma Separated Values (.csv)*
      
-     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow0.png)
+     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Training_workflow0.png)
      
 + 2 - Selection of Columns & Rows of interest
 + 3 - Data visualization
 + 4 - Data Sampler (for instance a selection of 75% of cases for training and 25% for testing)
 
-     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow1.png)
+     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Training_workflow1.png)
      
 + 5 - Visualization of data for training
 + 6 - Definition of model parameters
 + 7 - Testing & Scoring evaluation of selected models 
 
-     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow2.png)
+     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Training_workflow2.png)
      
      - Area under ROC is the area under the receiver-operating curve.
      - Classification accuracy is the proportion of correctly classified examples.
@@ -172,7 +172,7 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 + 10 - Load of models saved on **step 8**
 + 11 - Predictions based on saved trained models with a subset selected for testing
 
-     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Training_workflow3.png)
+     ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Training_workflow3.png)
      
 + 12 - Selection of the model to be applied for the anomaly detection *(in the example for the demo data provided, the selected is Random Forest model)*.
 
@@ -182,7 +182,7 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 
 ## Prediction Workflow
 
-![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow.png)
+![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Prediction_workflow.png)
 
 ### Procedure:
 + Step 1: Open Orange Data Mining application and load the workflow, or launch it via command line:
@@ -195,16 +195,16 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 #### Workflow description:
 - 1 - Upload of new polygon/s dataset/s (*in .csv format*)
 
-   ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow0.png)
+   ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Prediction_workflow0.png)
   
 - 2 - Remove Nan values from new dataset (*cloud pixel*)
 - 3 - Load of the selected trained model (*example: **RandomForest_Model.pkcls***)
 - 4 - Prediction process
 
-   ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow1.png)
+   ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Prediction_workflow1.png)
    
 - 5 - Save prediction (*in .csv format*)
 
-   ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/Prediction_workflow2.png)
+   ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Prediction_workflow2.png)
    
 
