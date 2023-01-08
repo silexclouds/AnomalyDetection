@@ -10,8 +10,22 @@ Procedure:
       - a.	Extraction of Vegetation Indices on fields to detect status
       - b.	Prediction of status based on trained model
 
+---
+#### Use case 1: Analysis of fields with potential PSA occurences (based on trained datasets)
++ a.	Extract field information (video)
++ b.	Launch Prediction Workflow (video)
+
+#### Use case 2: Analysis of other potential anomalies. Required new trained datasets
++ a.	Extract historical field information related to the crop anomaly and healthy fields (video)
++ b.	Launch Training Workflow (video)
++ c.	Extract Field information for new prediction (video)
++ d.	Launch Prediction Workflow (video)
+
+----
+
 ### Datasource: Copernicus Sentinel-2 satellite images
-#### Vegetation Indices: SR, NDVI, GNDVI, NDRE, modNDRE, EVI, EVI2, PVR, GCI, RECI, TVI, MTCI, LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI,OSAVI.
+### Vegetation Indices: 
+**SR, NDVI, GNDVI, NDRE, modNDRE, EVI, EVI2, PVR, GCI, RECI, TVI, MTCI, LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI,OSAVI.**
 
 Required applications:
 + Anaconda: Distribution of Python and R programming languages for scientific computing, suitable for Windows, Linux, and macOS, that aims to simplify package management and deployment (www.anaconda.com)
@@ -19,22 +33,7 @@ Required applications:
 + Orange Data Mining: Open source machine learning and data visualization application. License GPLv3 (www.orangedatamining.com)
 + Google Earth Engine account (https://earthengine.google.com/)
 
-----
-
-## Use cases:
-### Case 1: Analysis of fields with potential PSA occurences (based on trained datasets)
-Procedure:
-  - a.	Extract field information (video)
-  - b.	Launch Prediction Workflow (video)
-
-### Case 2: Analysis of other potential anomalies. Required new trained datasets
-Procedure: 
-+ a.	Extract historical field information related to the crop anomaly and healthy fields (video)
-+ b.	Launch Training Workflow (video)
-+ c.	Extract Field information for new prediction (video)
-+ d.	Launch Prediction Workflow (video)
-
-----
+---
 
 Python Notebook required modules: geemap, ee, numpy, eemont, csv, os, io, requests, pandas, osgeo
 | Module | Description |
@@ -102,8 +101,13 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 •	Windows: follow instructions described on: https://cloud.google.com/sdk/docs/install
 
 ---
-Description of Orange workflows used to manipulate, train and 
-Open source machine learning and data visualization.
+
+## Description of Orange workflows used for data manipulation, training and prediction. 
+
+![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/readmeImages/orange_logo_hq.png)
+
+---
+
 
 ## Data Preparation Workflow
 
