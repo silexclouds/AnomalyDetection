@@ -10,6 +10,7 @@ Procedure:
       - a.	Extraction of Vegetation Indices on fields to detect status
       - b.	Prediction of status based on trained model
 
+**Note: Is important to consider as a critical input validated data regarding the anomaly for the fields of reference.**
 ---
 #### Use case 1: Analysis of fields with potential PSA occurences (based on trained datasets)
 + a.	Extract field information (*VI_extraction.ipynb*)
