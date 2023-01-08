@@ -29,19 +29,12 @@
 + e.	Launch Prediction Workflow (*C_Workflow_prediction.ows*)
 
 ----
-<!-- blank line -->
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/orange_logo_hq.png">
-    <source src="path/to/video.mp4" type="video/mp4">
-  </video>
-</figure>
-<!-- blank line -->
-
-----
-### Datasource: 
-**Copernicus Sentinel-2 satellite images
-### Vegetation Indices: 
-**SR, NDVI, GNDVI, NDRE, modNDRE, EVI, EVI2, PVR, GCI, RECI, TVI, MTCI, LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI,OSAVI.**
+## Datasource: 
+**Copernicus Sentinel-2 satellite images**
+## Vegetation Indices: 
+**SR (Rouse et al. 1973), NDVI (Eitel et al. 2011), GNDVI (Gitelson & Merzlyak 1998), NDRE  (Gitelson & Merzlyak 1994), modNDRE (Datt
+1999), EVI (Huete et al. 1994), EVI2 (Huete et al. 1997), PVR (Metternicht 2003), GCI (Gitelson et al. 2003), RECI (Gitelson et al. 2003), TVI (Broge &
+Leblanc, 2001), MTCI (Dash & Curran 2004), LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI (Kaufman & Tanre 1996), OSAVI (Rondeaux et al., 1996).**
 
 Required applications:
 + Anaconda: Distribution of Python and R programming languages for scientific computing, suitable for Windows, Linux, and macOS, that aims to simplify package management and deployment (www.anaconda.com)
@@ -229,3 +222,27 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 
 MIT
 
+---
+
+### References:
+   - Broge, Niels & Leblanc, E. (2001). Comparing prediction power and stability of broadband and hyperspectral vegetation indices for estimation of green leaf area index and canopy chlorophyll density. Remote Sensing of Environment. 76. 156-172. 10.1016/S0034-4257(00)00197-8.
+
+   - Gitelson AA, Gritz Y, Merzlyak MN 2003. Relationships between leaf chlorophyll content and spectral reflectance and algorithm for non-destructive chlorophyll assessment in higher plant leaves. Journal of Plant Physiology 160: 271–282.
+   
+   - Gitelson AA, Merzlyak MN 1998. Remote sensing of chlorophyll concentration in higher plant leaves. Advances in Space Research 22: 689–692.
+
+   - Gitelson AA, Merzlyak MN 1994. Spectral reflectance changes associated with autumn senescence of Aesculus Hippocastanum L. and Acer Platanoides L. leaves: spectral features and relation to chlorophyll estimation. Journal of Plant Physiology 143:286–292.
+
+   - Dash J., Curran P. (2004). The MERIS terrestrial chlorophyll index. International Journal of Remote Sensing - INT J REMOTE SENS. 25. 10.1080/0143116042000274015. 
+
+   - Datt B. A new reflectance index for remote sensing of chlorophyll content in higher plants: tests using eucalyptus leaves. J Plant Physiol. 1999;154(1):30–36. https://doi.org/10.1016/S0176-1617(99)80314-9.
+
+   - Huete A, Justice C, Liu H 1994. Development of vegetation and soil indices for MODIS-EOS. Remote Sensing of Environment 49: 224–234.
+
+   - Huete AR, Liu H, Batchily K, van Leeuwen W 1997. A comparison of vegetation indices over a global set of TM images for EOS-MODIS. Remote Sensing of Environment 59: 440–451.
+
+   - Metternicht G.; (2003). Vegetation indices derived from high-resolution airborne videography for precision crop management. Int. J. Remote Sens. 24. 10.1080/01431160210163074. 
+
+   - Rondeaux G., Steven M., Frederic B.; (1996). Optimization of Soil-Adjusted Vegetation Indices. Remote Sensing of Environment. 55. 95-107. 10.1016/0034-4257(95)00186-7.
+   
+   - Rouse JW, Haas RH, Schell JA, Deering DW 1973. Monitoring vegetation systems in the great plains with ERTS. Third ERTS Symposium, NASA SP- 351 I: 309–317.
