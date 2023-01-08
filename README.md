@@ -207,4 +207,9 @@ Note: In case the command “earthengine authenticate” doesn’t work because 
 
    ![](https://github.com/silexclouds/AnomalyDetection/blob/main/readme/images/Prediction_workflow2.png)
    
+---
+---
+## License
+
+MIT
 
