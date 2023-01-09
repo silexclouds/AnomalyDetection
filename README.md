@@ -78,7 +78,7 @@ Python Notebook required modules: geemap, ee, numpy, eemont, csv, os, io, reques
 It is highly recommended to create a new conda environment to install geemap. Follow the commands below to set up a conda environment and install geemap and, which includes all the optional dependencies of geemap:
 
 conda create -n [environment name]
-To create an environment in which you can work and install the following packages you can use the file .condarc , and putting it into the user folder (naming it “.condarc”), and in the Anaconda prompt the following line “conda config”. An example of a **.condarc** file is attched on PythonNotebook folder.
+To create an environment in which you can work and install the following packages you can use the file .condarc , and putting it into the user folder (naming it “.condarc”), and in the Anaconda prompt the following line “conda config”. An example of a **.condarc** file is attched on PythonNotebook repository folder, that must be copied in the user folder (i.e.: c:\Users\<username>)
 
 Example of .condarc file:
 
