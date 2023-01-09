@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+  - defaults
+create_default_packages:
+  - python
+  - ee_extra
+  - eemont
+  - geemap
+  - pandas
+  - geopandas
+  - numpy
+  - spyder
+  - spyder-kernels
+  - jupyter
+ssl_verify: true
+default_python:
