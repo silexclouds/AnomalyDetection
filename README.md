@@ -36,6 +36,26 @@
 1999), EVI (Huete et al. 1994), EVI2 (Huete et al. 1997), PVR (Metternicht 2003), GCI (Gitelson et al. 2003), RECI (Gitelson et al. 2003), TVI (Broge &
 Leblanc, 2001), MTCI (Dash & Curran 2004), LCI, TCVI, GARVI, SIPI1, SIPI2, MCARI, ARVI (Kaufman & Tanre 1996), OSAVI (Rondeaux et al., 1996).**
 
+---
+
+#### Anaconda Environment: 
+The specific environment to run the Python Notebook **VI_extraction.ipynb** can be installed with the **environment.yml** file attached in the PythonNotebook folder.
+
+And from the Anaconda Prompt type:
+
+`conda env create -f environment.yml`
+
+Activate the new environment: 
+
+`conda activate myenv`
+
+Verify that the new environment was installed correctly:
+
+`conda env list`
+
+- more information regarding how to manage Anaconda environments at: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+---
+
 Required applications:
 + Anaconda: Distribution of Python and R programming languages for scientific computing, suitable for Windows, Linux, and macOS, that aims to simplify package management and deployment (www.anaconda.com)
 + Python Notebook (https://jupyter.org/)
@@ -53,9 +73,7 @@ Python Notebook required modules: geemap, ee, numpy, eemont, csv, os, io, reques
 | pandas | open source Python package most widely used for data science/data analysis and machine learning tasks (https://pandas.pydata.org/) |
 
 
-#### Anaconda Environment: 
-1)	Install Anaconda:
-Install anaconda or miniconda: The geemap package has some optional dependencies, such as GeoPandas and localtileserver. 
+1)	Install anaconda or miniconda: The geemap package has some optional dependencies, such as GeoPandas and localtileserver. 
 2)	Create a new Environment
 It is highly recommended to create a new conda environment to install geemap. Follow the commands below to set up a conda environment and install geemap and, which includes all the optional dependencies of geemap:
 
