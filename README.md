@@ -1,4 +1,4 @@
-## OBJECTIVE: prediction of potential anomalies in crops
+## OBJECTIVE: detection of potential anomalies in crops
 
 **Procedure to follow:**
 
